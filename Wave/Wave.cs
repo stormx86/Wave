@@ -21,7 +21,7 @@ namespace Wave
             InitializeComponent();
             InitLables();
             logic = new Logic(size, Show);
-            logic.init_game();
+            logic.InitProgram();
         }
 
            
@@ -69,9 +69,9 @@ namespace Wave
             {
                 case Keys.Enter: 
                     if(!logic.flag)
-                    logic.Wave(); break;               
-                case Keys.Up: logic.lookup_finish(); break;
-                case Keys.Escape: logic.init_game(); break;
+                    logic.RunWave(); break;               
+                case Keys.Up: logic.LookupFinish(); break;
+                case Keys.Escape: logic.InitProgram(); break;
                 default: break;
             }
             

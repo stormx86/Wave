@@ -25,7 +25,7 @@ namespace Wave
             flag2 = false;
         }
 
-        public void init_game()
+        public void InitProgram()
         {
             Ni = 0;
             Nmin = 0;
@@ -44,7 +44,7 @@ namespace Wave
                     show(x, y, map[x, y]);
         }
 
-        public void Wave()
+        public void RunWave()
         {
             for (int i = 1; i < map.GetLength(0)-1; i++)
                 for (int j = 1; j < map.GetLength(1)-1; j++)
@@ -74,7 +74,7 @@ namespace Wave
             Ni++;
         }
 
-       public void lookup_finish()
+       public void LookupFinish()
         {
                 for (int k = -1; k < 2; k++)
                     for (int m = -1; m < 2; m++)
